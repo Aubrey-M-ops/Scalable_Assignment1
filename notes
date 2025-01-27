@@ -1,0 +1,2 @@
+download python3 -m pip install --user grpcio-tools
+use python3

@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+service BankService {
+  rpc CreateAccount(AccountRequest) returns (AccountResponse);
+  rpc GetBalance(AccountRequest) returns (BalanceResponse);
+  rpc Deposit(DepositRequest) returns (TransactionResponse);
+  rpc Withdraw(WithdrawRequest) returns (TransactionResponse);
+  rpc CalculateInterest(InterestRequest) returns (TransactionResponse);
+}
+
+message AccountRequest {
+  string account_id = 1;       // Unique account ID
+  string account_type = 2;     // "savings" or "checking"
+}
+
+message AccountResponse {
+  string account_id = 1;
+  string message = 2;          // Account creation status
+}
+
+message BalanceResponse {
+  string account_id = 1;
+  double balance = 2;          // Current balance
+  string message = 3;
+}
+
+message DepositRequest {
+  string account_id = 1;
+  double amount = 2;           // Deposit amount
+}
+
+message WithdrawRequest {
+  string account_id = 1;
+  double amount = 2;           // Withdraw amount
+}
+
+message InterestRequest {
+  string account_id = 1;
+  double annual_interest_rate = 2;  // Annual interest rate in percentage
+}
+
+message TransactionResponse {
+  string account_id = 1;
+  string message = 2;          // Transaction status
+  double balance = 3;          // Updated balance
+}
+
