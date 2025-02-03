@@ -164,8 +164,18 @@
   },
   "active": "8cf89c19cf68b8cc",
   "lastOpenFiles": [
-    "Pasted image 20250131215529.png",
-    "Pasted image 20250131215427.png",
-    "Pasted image 20250131214714.png"
+    "create_account.png",
+    "README.md",
+    "assets/result_pics/withdraw.png",
+    "assets/result_pics/withdraw_negative_amounts.png",
+    "assets/result_pics/withdraw_insufficient.png",
+    "assets/result_pics/withdraw_account_not_found.png",
+    "assets/result_pics/welcome.png",
+    "assets/result_pics/interest.png",
+    "assets/result_pics/interest_not_valid_value.png",
+    "assets/result_pics/interest_account_not_found.png",
+    "assets/result_pics/get_balance.png",
+    "assets/result_pics",
+    "assets"
   ]
 }
